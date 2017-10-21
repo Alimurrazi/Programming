@@ -1,0 +1,111 @@
+#include<stdio.h>
+int main()
+{
+  int ara[110],ara1[110];
+  int i,j,k,l,t,n;
+  scanf("%d",&t);
+  char er = '"';
+  while(t--)
+  {
+   scanf("%d",&n);
+   for(i=0;i<n;i++)
+   scanf("%d",&ara[i]);
+   for(i=0;i<n;i++)
+   scanf("%d",&ara1[i]);
+   for(i=0;i<n;i++)
+   {
+     if(ara[i]==0)
+       printf(" ");
+     if(ara[i]==1)
+     {
+       if(ara1[i]==1)
+       printf(".");
+      else if(ara1[i]==2)
+        printf(",");
+      else if(ara1[i]==3)
+        printf("?");
+       else
+        printf("%c",er);
+     }
+     if(ara[i]==2)
+     {
+       if(ara1[i]==1)
+        printf("a");
+       if(ara1[i]==2)
+        printf("b");
+        if(ara1[i]==3)
+         printf("c");
+
+     }
+     if(ara[i]==3)
+     {
+       if(ara1[i]==1)
+        printf("d");
+       if(ara1[i]==2)
+        printf("e");
+       if(ara1[i]==3)
+        printf("f");
+     }
+     if(ara[i]==4)
+     {
+       if(ara1[i]==1)
+        printf("g");
+       if(ara1[i]==2)
+        printf("h");
+       if(ara1[i]==3)
+        printf("i");
+     }
+     if(ara[i]==5)
+     {
+       if(ara1[i]==1)
+        printf("j");
+       if(ara1[i]==2)
+        printf("k");
+       if(ara1[i]==3)
+        printf("l");
+     }
+     if(ara[i]==6)
+     {
+       if(ara1[i]==1)
+        printf("m");
+       if(ara1[i]==2)
+        printf("n");
+       if(ara1[i]==3)
+        printf("o");
+     }
+     if(ara[i]==7)
+     {
+       if(ara1[i]==1)
+        printf("p");
+       if(ara1[i]==2)
+        printf("q");
+       if(ara1[i]==3)
+        printf("r");
+       if(ara1[i]==4)
+        printf("s");
+     }
+     if(ara[i]==8)
+     {
+       if(ara1[i]==1)
+        printf("t");
+       if(ara1[i]==2)
+        printf("u");
+       if(ara1[i]==3)
+        printf("v");
+     }
+     if(ara[i]==9)
+     {
+       if(ara1[i]==1)
+        printf("w");
+       if(ara1[i]==2)
+        printf("x");
+       if(ara1[i]==3)
+        printf("y");
+       if(ara1[i]==4)
+        printf("z");
+     }
+   }
+   printf("\n");
+  }
+  return 0;
+}

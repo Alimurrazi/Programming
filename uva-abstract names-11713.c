@@ -1,0 +1,55 @@
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+  char str[30],str1[30];
+  int i,j,k,l1,l2,t;
+  scanf("%d",&t);
+  while(t--)
+  {
+    scanf("%s%s",str,str1);
+    l1=strlen(str);
+    l2=strlen(str1);
+    if(l1!=l2)
+    {
+      printf("No\n");
+      continue;
+    }
+    else
+    {
+     if(strcmp(str,str1)==0)
+     {
+            printf("Yes\n");
+            continue;
+     }
+     else
+     {
+       for(i=0;i<l1;i++)
+       {
+        if(str[i]=='a'||str[i]=='e'||str[i]=='i'||str[i]=='u'||str[i]=='o')
+        {
+          if(str1[i]!='a'&&str1[i]!='e'&&str1[i]!='i'&&str1[i]!='u'&&str1[i]!='o')
+          {
+           printf("No\n");
+           break;
+          }
+        }
+       }
+     if(i==l1)
+     {
+       for(i=0;i<l1;i++)
+        {
+          if(str[i]=='a'||str[i]=='e'||str[i]=='i'||str[i]=='u'||str[i]=='o')
+                str1[i]=str[i];
+        }
+        str1[i]='\0';
+     if(strcmp(str,str1)==0)
+        printf("Yes\n");
+     else
+        printf("No\n");
+     }
+     }
+    }
+  }
+  return 0;
+}

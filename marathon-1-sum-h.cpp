@@ -1,0 +1,30 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+ long long i,j,k,l,m,n,sum;
+ while(scanf("%lld",&k)==1)
+ {
+  n=fabs(k);
+  if(k==0)
+  {
+  printf("1\n");
+  continue;
+  }
+  if(k==1)
+  {
+   printf("1\n");
+   continue;
+  }
+  if(k==-1)
+  {
+   printf("0\n");
+   continue;
+  }
+  sum=2+(n-1);
+  sum=(n*sum)/2;
+  if(k<0)
+  sum=0-(sum-1);
+  printf("%lld\n",sum);
+ }
+}
