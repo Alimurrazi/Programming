@@ -1,0 +1,11 @@
+E:\Programming\programmingV2\binary_search\BinarySearchCSharp\BinarySearchCSharp\bin\Debug\netcoreapp2.1\BinarySearchCSharp.deps.json
+E:\Programming\programmingV2\binary_search\BinarySearchCSharp\BinarySearchCSharp\bin\Debug\netcoreapp2.1\BinarySearchCSharp.runtimeconfig.json
+E:\Programming\programmingV2\binary_search\BinarySearchCSharp\BinarySearchCSharp\bin\Debug\netcoreapp2.1\BinarySearchCSharp.runtimeconfig.dev.json
+E:\Programming\programmingV2\binary_search\BinarySearchCSharp\BinarySearchCSharp\bin\Debug\netcoreapp2.1\BinarySearchCSharp.dll
+E:\Programming\programmingV2\binary_search\BinarySearchCSharp\BinarySearchCSharp\bin\Debug\netcoreapp2.1\BinarySearchCSharp.pdb
+E:\Programming\programmingV2\binary_search\BinarySearchCSharp\BinarySearchCSharp\obj\Debug\netcoreapp2.1\BinarySearchCSharp.csprojAssemblyReference.cache
+E:\Programming\programmingV2\binary_search\BinarySearchCSharp\BinarySearchCSharp\obj\Debug\netcoreapp2.1\BinarySearchCSharp.csproj.CoreCompileInputs.cache
+E:\Programming\programmingV2\binary_search\BinarySearchCSharp\BinarySearchCSharp\obj\Debug\netcoreapp2.1\BinarySearchCSharp.AssemblyInfoInputs.cache
+E:\Programming\programmingV2\binary_search\BinarySearchCSharp\BinarySearchCSharp\obj\Debug\netcoreapp2.1\BinarySearchCSharp.AssemblyInfo.cs
+E:\Programming\programmingV2\binary_search\BinarySearchCSharp\BinarySearchCSharp\obj\Debug\netcoreapp2.1\BinarySearchCSharp.dll
+E:\Programming\programmingV2\binary_search\BinarySearchCSharp\BinarySearchCSharp\obj\Debug\netcoreapp2.1\BinarySearchCSharp.pdb
