@@ -26,51 +26,33 @@ namespace BinarySearchCSharp._475.Heaters
                 }
                 else if (ara[mid] < value)
                 {
-                    low = high + 1;
+                    low = mid + 1;
                 }
             }
-            if(ara[mid] == value)
+
+ 
+          
+            low = low <= 0 ? 0 : low;
+            low = low >= ara.Length ? ara.Length - 1 : low;
+
+            high = high <= 0 ? 0 : high;
+            high = high >= ara.Length ? ara.Length - 1 : high;
+
+            var minDistanceFromHeater = Math.Min(Math.Abs(ara[low] - value), Math.Abs(ara[high] - value));
+            minDistanceFromHeater = Math.Min(Math.Abs(ara[mid] - value), minDistanceFromHeater);
+            if (minDistanceFromHeater > differ)
             {
-                low = mid - 1;
-                high = mid + 1;
+                differ = minDistanceFromHeater;
             }
-            if (low >= 0 && low < ara.Length)
-            {
-                if (Math.Abs(ara[low] - value) > differ)
-                {
-                    differ = Math.Abs(ara[low] - value);
-                }
-            }
-            if (high >= 0 && high < ara.Length)
-            {
-                if (Math.Abs(ara[high] - value) > differ)
-                {
-                    differ = Math.Abs(ara[high] - value);
-                }
-            }
-            Console.WriteLine(differ);
         }
         public int FindRadius(int[] houses, int[] heaters)
         {
             Array.Sort(houses);
             Array.Sort(heaters);
 
-            int differLastAndFirstValue = Math.Abs(houses[0] - heaters[0]);
-            if (differLastAndFirstValue > differ)
+            for (int i = 0; i < houses.Length; i++)
             {
-                differ = differLastAndFirstValue;
-            }
-            if (houses.Length != 1)
-            {
-                differLastAndFirstValue = Math.Abs(houses[houses.Length - 1] - heaters[heaters.Length - 1]);
-                if (differLastAndFirstValue > differ)
-                {
-                    differ = differLastAndFirstValue;
-                }
-            for (int i = 0; i < heaters.Length; i++)
-            {
-                binarySearch(houses, heaters[i]);
-            }
+                binarySearch(heaters, houses[i]);
             }
             return differ;
         }
