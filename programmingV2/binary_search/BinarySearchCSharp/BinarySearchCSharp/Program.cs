@@ -9,7 +9,7 @@ namespace BinarySearchCSharp
         {
 
             int result;
-            result = new _69.sqrt_x_.Solution().MySqrt(4);
+            result = new _69.sqrt_x_.Solution().MySqrt(2147483647);
 
             //int result;
             //int[] PositionOfHouses = { 282475249, 622650073, 984943658, 144108930, 470211272, 101027544, 457850878, 458777923 };

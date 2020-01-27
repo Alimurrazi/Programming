@@ -8,16 +8,20 @@ namespace BinarySearchCSharp._69.sqrt_x_
     {
         public int MySqrt(int x)
         {
-            int low = 0, high = x;
-            int mid=0, result;
+            if(x == 1)
+            {
+                return 1;
+            }
+            long low = 0, high = x/2;
+            long mid = 0;
+            long result;
             while (low <= high)
             {
                 mid = (low + high) / 2;
                 result = mid * mid;
-                Console.WriteLine(result);
-                Console.WriteLine("----------");
                 if(result == x)
                 {
+                    low = mid;
                     break;
                 }
                 else if (result > x)
@@ -29,21 +33,15 @@ namespace BinarySearchCSharp._69.sqrt_x_
                     low = mid + 1;
                 }
             }
-            Console.WriteLine($"low=== {low}");
-            Console.WriteLine($"high === {high}");
-            Console.WriteLine($"mid === {mid}");
+        //    Console.WriteLine($"low=== {low}");
             if (low <= high)
             {
-                return low;
+                return Convert.ToInt32(low);
             }
             else
             {
-                return high;
+                return Convert.ToInt32(high);
             }
-          //  return mid;
-
-       //     Console.WriteLine(x);
-        //    return x;
         }
     }
 }
