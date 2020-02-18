@@ -22,7 +22,9 @@ namespace TwoPointerCSharp
             string str1 = "a####";
             string str2 = "a#";
             bool result = new _844._Backspace_String_Compare.Solution().BackspaceCompare(str1, str2);
-            Console.WriteLine(result);
+
+            int[] ara = { 0, 1, 2, 2, 3, 0, 4, 2 };
+            new _27._Remove_Element.Solution().RemoveElement(ara,2);
         }
     }
 }
