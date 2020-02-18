@@ -19,12 +19,16 @@ namespace TwoPointerCSharp
             //int[] nums2 = { 9, 4,9,8,4 };
 
             //  new _350._Intersection_of_Two_Arrays_2.Solution().Intersect(nums1, nums2);
-            string str1 = "a####";
-            string str2 = "a#";
-            bool result = new _844._Backspace_String_Compare.Solution().BackspaceCompare(str1, str2);
+            //string str1 = "a####";
+            //string str2 = "a#";
+            //bool result = new _844._Backspace_String_Compare.Solution().BackspaceCompare(str1, str2);
 
-            int[] ara = { 0, 1, 2, 2, 3, 0, 4, 2 };
-            new _27._Remove_Element.Solution().RemoveElement(ara,2);
+            //int[] ara = { 0, 1, 2, 2, 3, 0, 4, 2 };
+            //new _27._Remove_Element.Solution().RemoveElement(ara,2);
+
+            string name = "leelee";
+            string typed = "lleeelee";
+            new _925._Long_Pressed_Name.Solution().IsLongPressedName(name, typed);
         }
     }
 }

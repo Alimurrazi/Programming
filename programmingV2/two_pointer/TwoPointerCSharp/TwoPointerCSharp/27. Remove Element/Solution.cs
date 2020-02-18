@@ -8,7 +8,6 @@ namespace TwoPointerCSharp._27._Remove_Element
     {
         public int RemoveElement(int[] nums, int val)
         {
-          //  Array.Sort(nums);
             int index=0;
             for(int i = 0; i < nums.Length; i++)
             {
@@ -18,7 +17,7 @@ namespace TwoPointerCSharp._27._Remove_Element
                 }
             }
             Array.Resize(ref nums, index);
-            return 0;
+            return index;
         }
     }
 }
