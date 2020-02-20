@@ -26,8 +26,8 @@ namespace TwoPointerCSharp
             //int[] ara = { 0, 1, 2, 2, 3, 0, 4, 2 };
             //new _27._Remove_Element.Solution().RemoveElement(ara,2);
 
-            string name = "leelee";
-            string typed = "lleeelee";
+            string name = "ab";
+            string typed = "aab";
             new _925._Long_Pressed_Name.Solution().IsLongPressedName(name, typed);
         }
     }
