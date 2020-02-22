@@ -6,80 +6,56 @@ namespace TwoPointerCSharp._925._Long_Pressed_Name
 {
     class Solution
     {
+        char currentNameChar;
+        int RepeatationCount(string str, int startingIndex)
+        {
+            int count = 0;
+            for(int i = startingIndex; i < str.Length; i++)
+            {
+                if (str[i] != this.currentNameChar)
+                {
+                    break;
+                }
+                count++;
+            }
+            return count;
+        }
         public bool IsLongPressedName(string name, string typed)
         {
-            bool check = true;
-            int i, j, NumberOfNameRepetedChar = 1, NumberOfTypeRepetedChar = 0, TypedCharIndex = 0;
-            bool NameLastIndexReached = false;
-            bool TypeLastIndexReached = false;
-            bool LastTypedIndex = false;
-            if (name[0] != typed[0])
+            int i, j, nameCharCount = 0, typeCharCount = 0, typeStartingIndex = 0;
+            for (i = 0; i < name.Length; )
             {
-                return false;
-            }
-            for (i = 1; i < name.Length; i++)
-            {
-                if (i == name.Length - 1)
+                this.currentNameChar = name[i];
+                nameCharCount = this.RepeatationCount(name, i);
+                i = i + nameCharCount;
+                for (j = typeStartingIndex; j < typed.Length; )
                 {
-                    NameLastIndexReached = true;
-                }
-                if (name[i] == name[i - 1])
-                {
-                    NumberOfNameRepetedChar++;
-                }
-                if(name[i] != name[i-1] || NameLastIndexReached)
-                {
-                    //if (TypedCharIndex >= typed.Length)
-                    //{
-                    //    return false;
-                    //}
-                    for (j = TypedCharIndex; j < typed.Length; j++)
+                    if (typed[j] != this.currentNameChar)
                     {
-                        if(j == typed.Length-1)
-                        {
-                            LastTypedIndex = true;
-                        }
-                        if (typed[j] == name[i - 1])
-                        {
-                            NumberOfTypeRepetedChar++;
-                        }
-                        if(typed[j] != name[i - 1] || TypeLastIndexReached)
-                        {
-                            if (NumberOfTypeRepetedChar >= NumberOfNameRepetedChar)
-                            {
-                                    NumberOfNameRepetedChar = 1;
-                                    NumberOfTypeRepetedChar = 0;
-                                if(i == name.Length - 1)
-                                {
-                                    i++;
-                                    j--;
-                                    TypeLastIndexReached = true;
-                                }
-                                else
-                                {
-                                    TypedCharIndex = j;
-                                    break;
-                                }
-                            }
-                            else
-                            {
-                                check = false;
-                                return check;
-                            }
-
-                        }
+                        return false;
                     }
-
-                    if (NameLastIndexReached == false && LastTypedIndex == true)
+                    typeCharCount = this.RepeatationCount(typed, j);
+                    if (typeCharCount >= nameCharCount)
+                    {
+                        typeStartingIndex = typeStartingIndex + typeCharCount;
+                        break;
+                    }
+                    else
                     {
                         return false;
                     }
                 }
 
+                if((i< name.Length) && (typeStartingIndex >= typed.Length))
+                {
+                    return false;
+                }
             }
-            
-
-            return check;
+            if (typeStartingIndex < typed.Length)
+            {
+                return false;
+            }
+            return true;
         }
     }
 }

@@ -32,15 +32,15 @@ namespace TwoPointerCSharp
             //            "leelee"
             //"lleeelee"
 
-            //   string name = "pyplrz";
-            //   string typed = "ppyypllr";
+            //string name = "pyplrz";
+            //string typed = "ppyypllr";
 
 
             //string name = "leelee";
             //string typed = "lleeelee";
 
-            //string name = "abc";
-            //string typed = "ab";
+            //string name = "ab";
+            //string typed = "abc";
             string name = "kikcxmvzi";
             string typed = "kiikcxxmmvvzz";
 
