@@ -41,10 +41,12 @@ namespace TwoPointerCSharp
 
             //string name = "ab";
             //string typed = "abc";
-            string name = "kikcxmvzi";
-            string typed = "kiikcxxmmvvzz";
+            //string name = "kikcxmvzi";
+            //string typed = "kiikcxxmmvvzz";
+            //Console.WriteLine(new _925._Long_Pressed_Name.Solution().IsLongPressedName(name, typed));
 
-            Console.WriteLine(new _925._Long_Pressed_Name.Solution().IsLongPressedName(name, typed));
+            string str = "hello";
+            Console.WriteLine(new _345._Reverse_Vowels_of_a_String.Solution().ReverseVowels(str));
         }
     }
 }
