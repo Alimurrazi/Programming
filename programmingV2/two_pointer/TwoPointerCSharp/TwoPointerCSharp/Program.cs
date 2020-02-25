@@ -45,7 +45,7 @@ namespace TwoPointerCSharp
             //string typed = "kiikcxxmmvvzz";
             //Console.WriteLine(new _925._Long_Pressed_Name.Solution().IsLongPressedName(name, typed));
 
-            string str = "hello";
+            string str = "leetcode";
             Console.WriteLine(new _345._Reverse_Vowels_of_a_String.Solution().ReverseVowels(str));
         }
     }
