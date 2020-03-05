@@ -45,12 +45,12 @@ namespace TwoPointerCSharp
             //string typed = "kiikcxxmmvvzz";
             //Console.WriteLine(new _925._Long_Pressed_Name.Solution().IsLongPressedName(name, typed));
 
-            string str = "leetcode";
-            Console.WriteLine(new _345._Reverse_Vowels_of_a_String.Solution().ReverseVowels(str));
+         //   string str = "leetcode";
+        //    Console.WriteLine(new _345._Reverse_Vowels_of_a_String.Solution().ReverseVowels(str));
 
-            int[] nums1 = { 1, 2, 3, 0, 0, 0 };
-            int[] nums2 = { 2, 5, 6 };
-            new _88._Merge_Sorted_Array.Solution().Merge(nums1,nums1.Length, nums2,nums2.Length);
+            int[] nums1 = { 0,0,0 };
+            int[] nums2 = { 1,2,3 };
+            new _88._Merge_Sorted_Array.Solution().Merge(nums1, 0, nums2, nums2.Length);
         }
     }
 }
