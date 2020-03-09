@@ -22,12 +22,15 @@ namespace TwoPointerCSharp._88._Merge_Sorted_Array
             {
                 for (i = 0; i < nums1.Length && nums2StartingIndex<nums2.Length; i++)
                 {
-                    count++;
-                    if ((nums1[i] > nums2[nums2StartingIndex]) || (i > 0 && nums1[i]<nums1[i-1]) || m == 0 || count>m)
+                    if ((nums1[i] > nums2[nums2StartingIndex]) || (i > 0 && nums1[i]<nums1[i-1]) || m == 0 || count>=m)
                     {
                         nums1 = shiftOneIndex(nums1, i);
                         nums1[i] = nums2[nums2StartingIndex];
                         nums2StartingIndex++;
+                    }
+                    else
+                    {
+                        count++;
                     }
                 }
             }
