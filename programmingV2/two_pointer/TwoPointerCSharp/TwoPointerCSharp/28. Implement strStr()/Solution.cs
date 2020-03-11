@@ -30,6 +30,10 @@ namespace TwoPointerCSharp._28._Implement_strStr__
                 else
                 {
                     j = 0;
+                    if (result != -1)
+                    {
+                        i = result;
+                    }
                     result = -1;
                 }
             }
