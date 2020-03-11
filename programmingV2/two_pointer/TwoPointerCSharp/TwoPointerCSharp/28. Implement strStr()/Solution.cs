@@ -33,6 +33,10 @@ namespace TwoPointerCSharp._28._Implement_strStr__
                     result = -1;
                 }
             }
+            if (j != needle.Length)
+            {
+                result = -1;
+            }
             return result;
         }
     }

@@ -52,8 +52,12 @@ namespace TwoPointerCSharp
             //int[] nums2 = { 1,2,3 };
             //new _88._Merge_Sorted_Array.Solution().Merge(nums1, 0, nums2, nums2.Length);
 
-            string haystack = "hello";
-            string needle = "ell";
+//            "mississippi"
+//"issip"
+
+
+            string haystack = "mississippi";
+            string needle = "issip";
             Console.WriteLine(new _28._Implement_strStr__.Solution().StrStr(haystack, needle));
         }
     }
