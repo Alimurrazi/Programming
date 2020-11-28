@@ -1,0 +1,11 @@
+E:\Programming\programmingV2\greedy\greedy\bin\Debug\netcoreapp3.1\greedy.exe
+E:\Programming\programmingV2\greedy\greedy\bin\Debug\netcoreapp3.1\greedy.deps.json
+E:\Programming\programmingV2\greedy\greedy\bin\Debug\netcoreapp3.1\greedy.runtimeconfig.json
+E:\Programming\programmingV2\greedy\greedy\bin\Debug\netcoreapp3.1\greedy.runtimeconfig.dev.json
+E:\Programming\programmingV2\greedy\greedy\bin\Debug\netcoreapp3.1\greedy.dll
+E:\Programming\programmingV2\greedy\greedy\bin\Debug\netcoreapp3.1\greedy.pdb
+E:\Programming\programmingV2\greedy\greedy\obj\Debug\netcoreapp3.1\greedy.csprojAssemblyReference.cache
+E:\Programming\programmingV2\greedy\greedy\obj\Debug\netcoreapp3.1\greedy.AssemblyInfoInputs.cache
+E:\Programming\programmingV2\greedy\greedy\obj\Debug\netcoreapp3.1\greedy.AssemblyInfo.cs
+E:\Programming\programmingV2\greedy\greedy\obj\Debug\netcoreapp3.1\greedy.dll
+E:\Programming\programmingV2\greedy\greedy\obj\Debug\netcoreapp3.1\greedy.pdb
