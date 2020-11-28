@@ -41,10 +41,24 @@ namespace TwoPointerCSharp
 
             //string name = "ab";
             //string typed = "abc";
-            string name = "kikcxmvzi";
-            string typed = "kiikcxxmmvvzz";
+            //string name = "kikcxmvzi";
+            //string typed = "kiikcxxmmvvzz";
+            //Console.WriteLine(new _925._Long_Pressed_Name.Solution().IsLongPressedName(name, typed));
 
-            Console.WriteLine(new _925._Long_Pressed_Name.Solution().IsLongPressedName(name, typed));
+            //   string str = "leetcode";
+            //    Console.WriteLine(new _345._Reverse_Vowels_of_a_String.Solution().ReverseVowels(str));
+
+            //int[] nums1 = { 0,0,0 };
+            //int[] nums2 = { 1,2,3 };
+            //new _88._Merge_Sorted_Array.Solution().Merge(nums1, 0, nums2, nums2.Length);
+
+//            "mississippi"
+//"issip"
+
+
+            string haystack = "mississippi";
+            string needle = "issip";
+            Console.WriteLine(new _28._Implement_strStr__.Solution().StrStr(haystack, needle));
         }
     }
 }
