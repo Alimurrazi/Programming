@@ -9,3 +9,5 @@ E:\Programming\programmingV2\greedy\greedy\obj\Debug\netcoreapp3.1\greedy.Assemb
 E:\Programming\programmingV2\greedy\greedy\obj\Debug\netcoreapp3.1\greedy.AssemblyInfo.cs
 E:\Programming\programmingV2\greedy\greedy\obj\Debug\netcoreapp3.1\greedy.dll
 E:\Programming\programmingV2\greedy\greedy\obj\Debug\netcoreapp3.1\greedy.pdb
+E:\Programming\programmingV2\greedy\greedy\obj\Debug\netcoreapp3.1\greedy.csproj.CoreCompileInputs.cache
+E:\Programming\programmingV2\greedy\greedy\obj\Debug\netcoreapp3.1\greedy.genruntimeconfig.cache
