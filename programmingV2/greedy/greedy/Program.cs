@@ -17,9 +17,12 @@ namespace greedy
             //    int[,] ara = new int[,] { { 5, 8 }, { 3, 9 }, { 5, 12 }, { 16, 5 } };
             // string[] aras = new string[] { "zyx", "wvu", "tsr" };
             // Console.WriteLine(new _944().MinDeletionSize(aras));
-            var value = Console.ReadLine();
-            int num = Convert.ToInt32(value);
-            Console.WriteLine(new _1323().Maximum69Number(num));
+            //            var value = Console.ReadLine();
+            //          int num = Convert.ToInt32(value);
+            //        Console.WriteLine(new _1323().Maximum69Number(num));
+
+            int[] nums = { 1, 1, 1 };
+            Console.WriteLine(new _1827().MinOperations(nums));
 
            // Console.WriteLine(new _1725().CountGoodRectangles(ara));
             //  Console.WriteLine(new _1217().MinCostToMoveChips(ara));
