@@ -21,8 +21,15 @@ namespace greedy
             //          int num = Convert.ToInt32(value);
             //        Console.WriteLine(new _1323().Maximum69Number(num));
 
-            int[] nums = { 1, 1, 1 };
-            Console.WriteLine(new _1827().MinOperations(nums));
+            //  int[] nums = { 1, 1, 1 };
+            //  Console.WriteLine(new _1827().MinOperations(nums));
+            string str = "DDI";
+            var res = new _942().DiStringMatch(str);
+            foreach(int i in res)
+            {
+                Console.Write(i);
+            }
+        //    Console.WriteLine(new _942().DiStringMatch(str));
 
            // Console.WriteLine(new _1725().CountGoodRectangles(ara));
             //  Console.WriteLine(new _1217().MinCostToMoveChips(ara));
